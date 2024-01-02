@@ -1,0 +1,200 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .section-slider {
+    max-height: 100%;
+  }
+  .dots {
+    bottom: 20px;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .us-boxs {
+    margin: 0 8rem;
+  }
+  .t-box img {
+    width: 100%;
+  }
+  .box-heathy {
+    margin: 0 8rem;
+  }
+  .row {
+    margin: 0 8rem;
+    /* flex-wrap: wrap; */
+  }
+  .detail-box p {
+    width: 90%;
+  }
+  .btn-oc {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .t-box {
+    width: 266px;
+  }
+  .btn-oc {
+    display: none;
+  }
+  .box-heathy {
+    margin: 0 4.8rem;
+  }
+  .row {
+    margin: 0 4.8rem;
+    flex-wrap: wrap;
+  }
+  .us-boxs {
+    margin: 0 4.8rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+/**************************/
+/* BELOW 804px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 54em) {
+  p {
+    font-size: 1.4rem;
+  }
+  .us-box {
+    width: 200px;
+  }
+  header {
+    align-items: flex-start;
+  }
+  .main-nav {
+    margin-top: 36px;
+    margin-right: 77px;
+  }
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition-delay: 2s;
+  }
+  .nav-open .main-nav-list {
+    display: none;
+  }
+  .btn-oc {
+    display: block;
+  }
+
+  .nav-open .toggle-btn[name="close-btn"] {
+    display: none;
+  }
+  .nav-open .toggle-btn[name="open-btn"] {
+    display: block;
+  }
+  .form-section {
+    grid-template-columns: none;
+  }
+  .us-boxs {
+    margin: 0 2.4rem;
+  }
+  .us-box p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  .box-heathy p {
+    font-size: 1.4rem;
+  }
+  .detail-box p {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 550px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 34em) {
+  .header {
+    padding: 2.4rem 0 0 0;
+    margin: 0;
+  }
+  .section-slider {
+    height: 80vh;
+  }
+  .us-box {
+    width: 100%;
+  }
+
+  .form {
+    align-items: center;
+  }
+  form {
+    width: 90%;
+  }
+  .btn {
+    align-self: center;
+  }
+  .info {
+    margin: 0;
+  }
+
+  /* font-size */
+  .logo {
+    font-size: 2.4rem;
+  }
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+  .btn-oc {
+    font-size: 2.4rem;
+  }
+  .detail-box h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+  }
+  .detail-box h2 {
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+  }
+  .detail-box h1 {
+    font-size: 4.4rem;
+    margin-bottom: 1.8rem;
+  }
+  .detail-box p {
+    margin-bottom: 1.8rem;
+  }
+}
+/**************************/
+/* BELOW 550px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 25em) {
+  .us-section {
+    padding: 6.4rem 0;
+  }
+  .heathy-section {
+    padding: 6.4rem 0;
+  }
+  .info {
+    flex-direction: column;
+    row-gap: 3.2rem;
+  }
+}
+/* 
+ - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
